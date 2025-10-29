@@ -1,2 +1,91 @@
+Этот .gitignore файл включает:
 
-**б) `requirements.txt` (Список зависимостей)**
+Jupyter Notebook - скрывает временные файлы и checkpoint'ы
+
+Данные - исключает Excel и CSV файлы с данными (чтобы не загружать большие файлы в репозиторий)
+
+Python - стандартные исключения для Python проектов
+
+Виртуальные окружения - чтобы не коммитить зависимости
+
+IDE - настройки редакторов кода
+
+Системные файлы - для разных операционных систем
+
+Логи - файлы логов
+
+Результаты анализа - папки для выходных данных
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Data files
+*.xlsx
+*.csv
+*.xls
+data/
+raw_data/
+processed_data/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# PyCharm
+.idea/
+
+# Project specific
+results/
+outputs/
+exports/
+temp/
+tmp/
+cache/
